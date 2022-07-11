@@ -1,7 +1,6 @@
 import "dart:convert";
-import "dart:io";
 
-import "package:msgpack_dart/msgpack_dart.dart" as m2;
+import 'package:message_pack_dart/message_pack_dart.dart' as m2;
 
 const int TIMES = 10000;
 
@@ -43,8 +42,7 @@ main(List<String> args) async {
 
     var jsonBytes = utf8.encode(json.encode(numbers)).length;
     var msgpack2Bytes = m2.serialize(numbers).length;
-    print("JSON: ${jsonBytes} bytes, MSGPACK: ${msgpack2Bytes} bytes");
-    exit(0);
+    print("JSON: ${jsonBytes} bytes, messagePack: ${msgpack2Bytes} bytes");
   }
 
   var objects = {

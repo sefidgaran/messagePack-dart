@@ -9,7 +9,7 @@
             "args": [
                 "-a"
             ],
-            "program": "example/benchmark.dart",
+            "program": "example/main.dart",
             "request": "launch",
             "type": "dart"
         }

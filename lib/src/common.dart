@@ -1,4 +1,4 @@
-part of msgpack_dart;
+part of messagePack_dart;
 
 class FormatError implements Exception {
   FormatError(this.message);

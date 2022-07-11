@@ -1,4 +1,4 @@
-part of msgpack_dart;
+part of messagePack_dart;
 
 abstract class ExtDecoder {
   dynamic decodeObject(int extType, Uint8List data);

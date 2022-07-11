@@ -1,4 +1,4 @@
-part of msgpack_dart;
+part of messagePack_dart;
 
 abstract class ExtEncoder {
   // Return null if object can't be encoded
@@ -111,7 +111,8 @@ class Serializer {
       _writer.writeUint8(0xdb);
       _writer.writeUint32(length);
     } else {
-      throw FormatError("String is too long to be serialized with msgpack.");
+      throw FormatError(
+          "String is too long to be serialized with messagePack.");
     }
     _writer.writeBytes(encoded);
   }
@@ -128,7 +129,7 @@ class Serializer {
       _writer.writeUint8(0xc6);
       _writer.writeUint32(length);
     } else {
-      throw FormatError("Data is too long to be serialized with msgpack.");
+      throw FormatError("Data is too long to be serialized with messagePack.");
     }
     _writer.writeBytes(buffer);
   }
@@ -145,7 +146,7 @@ class Serializer {
       _writer.writeUint8(0xdd);
       _writer.writeUint32(length);
     } else {
-      throw FormatError("Array is too big to be serialized with msgpack");
+      throw FormatError("Array is too big to be serialized with messagePack");
     }
 
     for (final item in iterable) {
@@ -165,7 +166,7 @@ class Serializer {
       _writer.writeUint8(0xdf);
       _writer.writeUint32(length);
     } else {
-      throw FormatError("Map is too big to be serialized with msgpack");
+      throw FormatError("Map is too big to be serialized with messagePack");
     }
 
     for (final item in map.entries) {

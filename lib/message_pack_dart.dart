@@ -1,4 +1,4 @@
-library msgpack_dart;
+library messagePack_dart;
 
 import 'dart:convert';
 import 'dart:typed_data';

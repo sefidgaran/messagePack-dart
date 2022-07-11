@@ -1,6 +1,6 @@
 import 'dart:typed_data';
 
-import "package:msgpack_dart/msgpack_dart.dart";
+import 'package:message_pack_dart/message_pack_dart.dart';
 import 'package:test/test.dart';
 
 //
